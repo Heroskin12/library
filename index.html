@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/logo.png" alt="Logo of Library">
+            <h2>Jamie's Library</h2> <!---Can I change this in JS to be responsive to user name?-->
+        </nav>
+    </header>
+    
+    <main>
+        <aside>
+            <form action="#" id="bookForm" class="hide">
+                <div class="name field">
+                    <label for="name">Name of Book</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="author field">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author">
+                </div>
+
+                <div class="year field">
+                    <label for="year">Year Published</label>
+                    <input type="text" name="year" id="year">
+                </div>
+
+                <div class="pages field">
+                    <label for="pages">Number of Pages</label>
+                    <input type="text" name="pages" id="pages">
+                </div>
+
+                <div class="read field">
+                    <label for="read">Have you read it before?</label>
+                    <input type="checkbox" name="read" id="read">
+                </div>
+
+                <button type="button" id="submitBook">Add Book to Library</button>
+            </form>
+
+            <button type="button" id="addMenu"><i class="fa-solid fa-plus"></i>Add a Book</button>
+        </aside>
+        <section id="cards">
+                <div class="card">
+                    <h3>Harry Potter & the Philosopher's Stone</h3>
+                    <p>By J.K. Rowling</p>
+                    <p>Published: 1997</p>
+                    <p>Number of Pages: 223</p>
+                    <p>Read it already.</p>
+                    <button type="button" class="remove">Remove</button>
+                    <button type="button">Change Read Status</button>
+                </div>
+                
+        </section> 
+    </main>
+
+    <footer>
+        <p>Library Project by <a href="https://github.com/Heroskin12?tab=repositories">Heroskin12</a></p>
+    </footer>
+</body>
+<script src="./main.js"></script>
+<script src="https://kit.fontawesome.com/5ed879b221.js" crossorigin="anonymous"></script>
+</html>

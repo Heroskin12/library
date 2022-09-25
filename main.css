@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    background: #fff;
+}
+
+img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    background: #ec8f00;
+    color: #fff;
+    height: 15vh;
+}
+
+nav > h2 {
+    margin-left: 20px;
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+aside {
+    background: #810000;
+    color: #fff;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside > button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    background: #ec8f00;
+    border: none;
+    outline: none;
+}
+
+aside > button i {
+    margin-right: 10px;
+}
+
+aside > button:hover {
+    background: #ce7c00;
+    cursor: pointer;
+}
+
+form > div.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+form input:focus {
+    outline: 3px solid #ec8f00;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]:focus {
+    border: none;
+    outline: none;
+}
+
+.read {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+form button {
+    width: 100%;
+    background: #ec8f00;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+}
+
+form button:hover {
+    background: #ce7c00;
+    cursor: pointer;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.card {
+    background: #002907;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px;
+}
+
+.card > h3 {
+    padding-bottom: 10px;
+}
+
+.card > p {
+    padding: 5px 0;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ec8f00;
+    padding: 20px;
+    font-weight: 700;
+    color: #fff;
+    height: 10vh;
+}
+
+footer a {
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
