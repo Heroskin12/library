@@ -1,3 +1,14 @@
+// Book Class
+class Book {
+    constructor(name, author, year, pages, read) {
+        this.name = name;
+        this.author = author;
+        this.year = year;
+        this.pages = pages;
+        this.read = read;
+    }
+}
+
 // Buttons & Form
 const addMenu = document.querySelector('#addMenu');
 const submitBook = document.querySelector('#submitBook');
@@ -62,15 +73,6 @@ function changeStatus() {
             displayBooks();
         })
     }
-}
-
-// Book object constructor...
-function Book(name, author, year, pages, read) {
-    this.name = name;
-    this.author = author;
-    this.year = year;
-    this.pages = pages;
-    this.read = read;
 }
 
 // Add a prototype function to log successful form inputs.
@@ -139,27 +141,3 @@ function displayBooks() {
     removeBook();
     changeStatus();
 }
-
-
-
-
-
-
-
-
-//function Book(title, author, pages, read) {
-    //this.title = title;
-    //this.author = author;
-    //this.pages = pages;
-    //this.read = read;
-    //this.reportInfo = function() {
-        //return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
-    //}
-    //console.log(this.reportInfo());
-//}
-
-//const harryPotter = new Book("Harry Potter and the Philosopher's Stone", "J.K. Rowling", 223, "read it already");
-//const fellowshipRing = new Book("The Lord of the Rings: The Fellowship of the Ring", "J.R.R. Tolkien", 423, "read it already");
-//const amerMarriage = new Book("American Marriage", "Tayari Jones", 308, "not read yet");
-//const hungerGames = new Book("Hunger Games", "Suzanne Collins", 374, "read it already");
-
